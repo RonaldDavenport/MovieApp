@@ -11,7 +11,7 @@
     movieCards.innerHTML=""
 
      
-     let results = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=ea46f216&s=${input.value}`)
+     let results = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=ea46f216&s=${input.value}`)
      const data = await results.json();
     for( const movieCard of data.Search){
         const div = document.createElement("div")
